@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <div class="heading">
+            <div class="score">
+                <div class="cash-logo"><img src="images/cashlogo.png" alt="cash"></div>
+                <div class="score-container">0</div>
+            </div>
+            <div class="app-logo"><img src="images/logo.png" alt=""></div>
+            <div class="count-container">
+                <div class="question-number"></div>
+                <div class="question-logo"><img src="images/question-logo.png" alt=""></div>
+            </div>
+        </div>
+        <div class="timer-container">
+            <svg class="timer-svg" viewBox="0 0 100 100">
+                <defs>
+                    <filter id="blur">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                    </filter>
+                </defs>
+                <circle class="timer-circle" cx="50" cy="50" r="45" filter="url(#blur)"></circle>
+            </svg>
+            <div class="timer-text">
+                <span class="timer-number">30</span>
+                <span class="timer-unit">sec</span>
+            </div>
+        </div>
+
+
+        <div class="question-container">
+            <div class="question">2. <span style="margin-left:10px;">Holkar Trophy is Associated With Which
+                    Sport?</span></div>
+            <div class="answer-btn">
+                <button class="btn">A. <span class="ml-20 answers">Bridge</span></button>
+                <button class="btn">B. <span class="ml-20 answers">Hockey</span></button><br>
+                <button class="btn">C. <span class="ml-20 answers">Football</span></button>
+                <button class="btn">D. <span class="ml-20 answers">Badminton</span></button>
+            </div>
+        </div>
+
+        <div class="game-over">
+            <div class="cross"><i class="fa fa-times"></i></div>
+            <div class="contents">
+                <div class="text">Game Over</div>
+                <div class="scoreboard">Your Score is <span>5000</span></div>
+            </div>
+        </div>
+        <div class="phoneafriend">
+            <div class="cross"><i class="fa fa-times"></i></div>
+            <div class="contents">
+                <div class="text">H</div>
+            </div>
+        </div>
+        <div class="lifeline-btn">
+            <button class="fiftyFifty">50/50</i></button>
+            <button class="audiencepoll"><i class="fa fa-group"></i></button>
+            <button class="phonefriend"><i class="fa fa-phone"></i></button>
+        </div>
+
+    </div>
+</body>
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</html>
